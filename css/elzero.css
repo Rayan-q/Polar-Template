@@ -711,7 +711,17 @@ a {
     height: 40%;
 }
 .backup-manager .locations .drive {
+    flex: 0 0 30%;
     padding: 10px 26px;
+}
+@media (max-width: 767px) {
+    .backup-manager .locations {
+        flex-direction: column;
+    }
+    .backup-manager .locations .drive {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 /* End Backup Manager */
 /* Start Profile */
